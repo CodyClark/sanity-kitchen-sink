@@ -17,6 +17,13 @@ export default {
       description: 'Which nav menu should be shown, if any',
     },
     {
+      name: 'series',
+      type: 'reference',
+      title: 'Series',
+      to: [{ type: 'series' }],
+      description: 'Which series should be shown, if any',
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Page sections',

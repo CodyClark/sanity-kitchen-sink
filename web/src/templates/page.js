@@ -108,19 +108,29 @@ const Page = props => {
 
   const menuItems = page.navMenu && (page.navMenu.items || []);
   const pageTitle = data.route && !data.route.useSiteTitle && page.title;
-
+  const series = page.series;
+  console.log(page);
+  
+  
   return (
     <Layout navMenuItems={menuItems} textWhite={true}>
-      <SEO
-        title={pageTitle}
-        description={site.description}
-        keywords={site.keywords}
-        bodyAttr={{
-          class: "leading-normal tracking-normal text-white gradient"
-        }}
-        gradient={gradient}
-      />
-      <div className="pt-24">{content}</div>
+        <SEO
+          title={pageTitle}
+          description={site.description}
+          keywords={site.keywords}
+          bodyAttr={{
+            class: "leading-normal tracking-normal text-white gradient"
+          }}
+          gradient={gradient}
+        />
+        <div className="text-center">
+          <div className="pt-24">Name: {series.name}</div>
+          <div className="">Starting MSRP: {series.startingMSRP}</div>
+          {series.Models.map(model => (
+            <li key={model._id}>{model.code} -- {model.trim} ({model.cityMPG} mpg city -- {model.hwyMPG} mpg hwy)</li>
+          ))}
+        </div>
+        <div className="pt-24">{content}</div>
     </Layout>
   );
 };

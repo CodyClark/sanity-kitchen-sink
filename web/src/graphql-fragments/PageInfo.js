@@ -1,5 +1,4 @@
 import { graphql } from "gatsby";
-
 export const PostInfo = graphql`
   fragment PageInfo on SanityPage {
     id
@@ -8,5 +7,15 @@ export const PostInfo = graphql`
     }
     _rawContent(resolveReferences: { maxDepth: 10 })
     title
+    series {
+      name
+      startingMSRP
+      Models {
+        trim
+        code
+        cityMPG
+        hwyMPG
+      }
+    }
   }
 `;

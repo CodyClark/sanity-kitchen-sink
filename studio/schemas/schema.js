@@ -13,6 +13,8 @@ import post from './documents/post'
 import page from './documents/page'
 import siteSettings from './documents/siteSettings'
 import route from './documents/route'
+import series from './documents/series'
+import model from './documents/model'
 
 import experiment from './objects/experiment'
 import simpleBlockContent from './objects/simpleBlockContent'
@@ -62,6 +64,8 @@ export default createSchema({
       videoEmbed,
       bodyPortableText,
       excerptPortableText,
+      series,
+      model
     ])
     .concat(allPlugs),
 })
