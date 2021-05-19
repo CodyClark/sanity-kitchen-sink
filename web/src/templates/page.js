@@ -75,7 +75,7 @@ const Page = props => {
           el = <InfoRows key={c._key} {...c} />;
           break;
         case "hero":
-          el = <Hero key={c._key} {...c} />;
+          el = <Hero key={c._key} series={page.series} {...c}  />;
           break;
         case "ctaColumns":
           el = <CTAColumns key={c._key} {...c} />;
@@ -109,8 +109,7 @@ const Page = props => {
   const menuItems = page.navMenu && (page.navMenu.items || []);
   const pageTitle = data.route && !data.route.useSiteTitle && page.title;
   const series = page.series;
-  console.log(page);
-  
+  console.log(series);
   
   return (
     <Layout navMenuItems={menuItems} textWhite={true}>
@@ -127,7 +126,14 @@ const Page = props => {
           <div className="pt-24">Name: {series.name}</div>
           <div className="">Starting MSRP: {series.startingMSRP}</div>
           {series.Models.map(model => (
+            <>
             <li key={model._id}>{model.code} -- {model.trim} ({model.cityMPG} mpg city -- {model.hwyMPG} mpg hwy)</li>
+            {/* <GatsbyImage
+            className="w-full md:w-4/5 z-50"
+            image={imageData}
+            alt={illustration.image.alt}
+          /> */}
+            </>
           ))}
         </div>
         <div className="pt-24">{content}</div>

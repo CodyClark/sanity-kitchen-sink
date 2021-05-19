@@ -4,6 +4,10 @@ export default {
   title: 'Model',
   fields: [
     {
+      name: 'modelImage',
+      type: 'image'
+    },
+    {
       name: 'code',
       type: 'string',
       title: 'Model Code',
