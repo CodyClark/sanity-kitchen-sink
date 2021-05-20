@@ -108,7 +108,7 @@ const Page = props => {
 
   const menuItems = page.navMenu && (page.navMenu.items || []);
   const pageTitle = data.route && !data.route.useSiteTitle && page.title;
-  const series = page.series;
+  const series = page.series || false;
   console.log(series);
   
   return (
@@ -123,18 +123,24 @@ const Page = props => {
           gradient={gradient}
         />
         <div className="text-center">
-          <div className="pt-24">Name: {series.name}</div>
-          <div className="">Starting MSRP: {series.startingMSRP}</div>
-          {series.Models.map(model => (
-            <>
-            <li key={model._id}>{model.code} -- {model.trim} ({model.cityMPG} mpg city -- {model.hwyMPG} mpg hwy)</li>
-            {/* <GatsbyImage
-            className="w-full md:w-4/5 z-50"
-            image={imageData}
-            alt={illustration.image.alt}
-          /> */}
-            </>
-          ))}
+            { series ? ()=>{
+                return (
+                <>
+                  <div className="pt-24">Name: {series.name}</div>
+                    <div className="">Starting MSRP: {series.startingMSRP}</div>
+                    {series.Models.map(model => (
+                      <>
+                      <li key={model._id}>{model.code} -- {model.trim} ({model.cityMPG} mpg city -- {model.hwyMPG} mpg hwy)</li>
+                      {/* <GatsbyImage
+                      className="w-full md:w-4/5 z-50"
+                      image={imageData}
+                      alt={illustration.image.alt}
+                    /> */}
+                      </>
+                    ))}
+                  </>
+                );
+            } : "" }
         </div>
         <div className="pt-24">{content}</div>
     </Layout>
