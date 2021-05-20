@@ -136,7 +136,7 @@ const Page = props => {
                       image={imageData}
                       alt={illustration.image.alt}
                     /> */}
-                      </>
+                      </> 
                     ))}
                   </>
                 );
