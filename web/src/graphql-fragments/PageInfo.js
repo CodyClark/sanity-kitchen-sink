@@ -9,12 +9,28 @@ export const PostInfo = graphql`
     title
     series {
       name
+      group
       startingMSRP
+      category
+      year
+      mpgCity
+      mpgHighway
+      seats
+      adjustedSeats
       Models {
-        trim
-        code
-        cityMPG
-        hwyMPG
+          modelId
+          grade
+          modelNumber
+          modelName
+          modelDescription
+          modelYear
+          modelYearVersionCode
+          modelYearDescription
+          engine
+          make
+          msrp
+          invoice
+          dealerCost
       }
     }
   }

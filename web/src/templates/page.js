@@ -122,20 +122,31 @@ const Page = props => {
           }}
           gradient={gradient}
         />
-        <div className="text-center">
-            { page.series ? () => {
-                return (
+        <div className="text-center pt-24">
                 <>
-                  <div className="pt-24">Name: {page.series.name}</div>
-                    <div className="">Starting MSRP: {page.series.startingMSRP}</div>
-                    {page.series.Models.map(model => (
-                      <>
-                      <li key={model._id}>{model.code} -- {model.trim} ({model.cityMPG} mpg city -- {model.hwyMPG} mpg hwy)</li>
-                      </> 
-                    ))}
-                  </>
-                );
-            } :  null }
+                  <div className="">Family: {page.series.category}</div>
+                  <div className="">Name: {page.series.name}</div>
+                  <div className="">Starting MSRP: {page.series.startingMSRP.toLocaleString('en-US', {style: 'currency', currency: "USD", minimumFractionDigits: 0})}</div>
+                  <div className="">Seats: {page.series.seats}</div>
+                  <div className="">MPG City: {page.series.mpgCity}</div>
+                  <div className="">MPG Hwy: {page.series.mpgHighway}</div>
+                  <br />
+                  <div>Models:</div>
+                  
+                  {page.series.Models.map(model => (
+                    <>
+                     <div className="">Model Num: {model.modelNumber}</div>
+                     <div className="">Model Grade: {model.grade}</div>
+                     <div className="">MSRP: {model.msrp.toLocaleString('en-US', {style: 'currency', currency: "USD"})}</div>
+                     <div className="">Model Desc: {model.modelDescription}</div>
+                     <div className="">Model Year: {model.modelYear}</div>
+                     <div className="">Model Year Desc: {model.modelYearDescription}</div>
+                     <div className="">Model Year Version: {model.modelYearVersionCode}</div>
+                     <br />
+                    </> 
+                    
+                  ))}
+                </>
         </div>
         <div className="pt-24">{content}</div>
     </Layout>
