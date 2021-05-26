@@ -4,28 +4,70 @@ export default {
   title: 'Model',
   fields: [
     {
-      name: 'modelImage',
-      type: 'image'
+      name: 'modelId',
+      type: 'number',
+      title: 'Model Id',
     },
     {
-      name: 'code',
+      name: 'grade',
       type: 'string',
-      title: 'Model Code',
+      title: 'Grade',
     },
     {
-      name: 'trim',
+      name: 'modelNumber',
       type: 'string',
-      title: 'Trim',
+      title: 'Model Number',
     },
     {
-      name: 'cityMPG',
+      name: 'modelName',
       type: 'string',
-      title: 'City MPG',
+      title: 'Model Name',
     },
     {
-      name: 'hwyMPG',
+      name: 'modelDescription',
       type: 'string',
-      title: 'Hwy MPG',
-    }
+      title: 'Model Description',
+    },
+    {
+      name: 'modelYear',
+      type: 'string',
+      title: 'Model Year',
+    },
+    {
+      name: 'modelYearVersionCode',
+      type: 'string',
+      title: 'Model Year Version Code',
+    },
+    {
+      name: 'modelYearDescription',
+      type: 'string',
+      title: 'Model Year Description',
+    },
+    {
+      name: 'engine',
+      type: 'string',
+      title: 'Engine',
+    },
+    {
+      name: 'make',
+      type: 'string',
+      title: 'Make',
+    },
+    {
+      name: 'msrp',
+      type: 'number',
+      title: 'MSRP',
+    },
+    {
+      name: 'invoice',
+      type: 'number',
+      title: 'Invoice',
+    },
+    {
+      name: 'dealerCost',
+      type: 'number',
+      title: 'Dealer Cost',
+    },
+    
   ],
 }
