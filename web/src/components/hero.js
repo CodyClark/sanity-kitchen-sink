@@ -29,7 +29,6 @@ const maybeImage = (illustration,series) => {
 };
 
 function Hero(props) {
-  console.log(props);
   const img = maybeImage(props.illustration, props.series);
   return (
     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">

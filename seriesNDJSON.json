@@ -1,0 +1,27 @@
+{"_type":"series","Name":"4Runner","Group":"4Runner","Category":"Crossovers & SUVs","Year":"2021","StartingMsrp":36590,"MpgCity":"16","MpgHighway":"19","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"86","Group":"86","Category":"Cars & Minivan","Year":"2020","StartingMsrp":27060,"MpgCity":"22","MpgHighway":"30","Seats":4,"AdjustedSeats":0}
+{"_type":"series","Name":"Avalon","Group":"Avalon","Category":"Cars & Minivan","Year":"2021","StartingMsrp":35975,"MpgCity":"22","MpgHighway":"31","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Avalon Hybrid","Group":"Avalon","Category":"Hybrids","Year":"2021","StartingMsrp":37100,"MpgCity":"43","MpgHighway":"43","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Camry","Group":"Camry","Category":"Cars & Minivan","Year":"2021","StartingMsrp":24970,"MpgCity":"25","MpgHighway":"35","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Camry Hybrid","Group":"Camry","Category":"Hybrids","Year":"2021","StartingMsrp":27270,"MpgCity":"45","MpgHighway":"48","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"C-HR","Group":"CHR","Category":"Crossovers & SUVs","Year":"2021","StartingMsrp":21545,"MpgCity":"27","MpgHighway":"31","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Corolla","Group":"Corolla","Category":"Cars & Minivan","Year":"2021","StartingMsrp":20025,"MpgCity":"30","MpgHighway":"38","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Corolla Hatchback","Group":"Corolla Hatchback","Category":"Cars & Minivan","Year":"2021","StartingMsrp":20665,"MpgCity":"30","MpgHighway":"38","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Corolla Hybrid","Group":"Corolla Hybrid","Category":"Hybrids","Year":"2021","StartingMsrp":23600,"MpgCity":"53","MpgHighway":"52","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Highlander","Group":"Highlander","Category":"Crossovers & SUVs","Year":"2021","StartingMsrp":34910,"MpgCity":"20","MpgHighway":"28","Seats":8,"AdjustedSeats":0}
+{"_type":"series","Name":"Highlander Hybrid","Group":"Highlander","Category":"Hybrids","Year":"2021","StartingMsrp":38510,"MpgCity":"35","MpgHighway":"34","Seats":8,"AdjustedSeats":0}
+{"_type":"series","Name":"Land Cruiser","Group":"Land Cruiser","Category":"Crossovers & SUVs","Year":"2021","StartingMsrp":85665,"MpgCity":"13","MpgHighway":"17","Seats":8,"AdjustedSeats":0}
+{"_type":"series","Name":"Prius","Group":"Prius","Category":"Hybrids","Year":"2021","StartingMsrp":24525,"MpgCity":"53","MpgHighway":"49","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Prius C","Group":"Prius C","Category":"Hybrids","Year":"2019","StartingMsrp":21530,"MpgCity":"48","MpgHighway":"43","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Prius Plug In","Group":"Prius Plug In","Category":"Cars & Minivan","Year":"2021","StartingMsrp":28220,"MpgCity":"0","MpgHighway":"0","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"RAV4","Group":"RAV4","Category":"Crossovers & SUVs","Year":"2021","StartingMsrp":26150,"MpgCity":"26","MpgHighway":"33","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"RAV4 Hybrid","Group":"RAV4","Category":"Hybrids","Year":"2021","StartingMsrp":28650,"MpgCity":"41","MpgHighway":"38","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"RAV4 PRIME","Group":"RAV4","Category":"Cars & Minivan","Year":"2021","StartingMsrp":38250,"MpgCity":null,"MpgHighway":null,"Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Sequoia","Group":"Sequoia","Category":"Crossovers & SUVs","Year":"2021","StartingMsrp":50200,"MpgCity":"13","MpgHighway":"17","Seats":8,"AdjustedSeats":0}
+{"_type":"series","Name":"Sienna","Group":"Sienna","Category":"Cars & Minivan","Year":"2021","StartingMsrp":34460,"MpgCity":"35","MpgHighway":"36","Seats":8,"AdjustedSeats":0}
+{"_type":"series","Name":"Supra","Group":"Supra","Category":"Cars & Minivan","Year":"2021","StartingMsrp":50990,"MpgCity":"22","MpgHighway":"30","Seats":2,"AdjustedSeats":0}
+{"_type":"series","Name":"Tacoma","Group":"Tacoma","Category":"Trucks","Year":"2021","StartingMsrp":26250,"MpgCity":"18","MpgHighway":"22","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Tundra","Group":"Tundra","Category":"Trucks","Year":"2021","StartingMsrp":33825,"MpgCity":"13","MpgHighway":"17","Seats":6,"AdjustedSeats":0}
+{"_type":"series","Name":"Venza","Group":"Venza","Category":"Hybrids","Year":"2021","StartingMsrp":32570,"MpgCity":null,"MpgHighway":null,"Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Yaris","Group":"Yaris","Category":"Cars & Minivan","Year":"2020","StartingMsrp":15650,"MpgCity":"31","MpgHighway":"39","Seats":5,"AdjustedSeats":0}
+{"_type":"series","Name":"Yaris Liftback","Group":"Yaris Liftback","Category":"Cars & Minivan","Year":"2020","StartingMsrp":17750,"MpgCity":"32","MpgHighway":"40","Seats":5,"AdjustedSeats":0}
