@@ -68,6 +68,13 @@ export default {
       type: 'number',
       title: 'Dealer Cost',
     },
-    
+    {
+      name: 'characteristics',
+      type: 'object',
+      title: 'Characteristics',
+      type: 'characteristic',
+      collapsible: true,
+      collapsed: true
+    },
   ],
 }

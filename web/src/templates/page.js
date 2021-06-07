@@ -110,7 +110,7 @@ const Page = props => {
   const pageTitle = data.route && !data.route.useSiteTitle && page.title;
   // const series = page.series;
   console.log(page);
-  
+
   return (
     <Layout navMenuItems={menuItems} textWhite={true}>
         <SEO
@@ -133,7 +133,7 @@ const Page = props => {
                   <br />
                   <div>Models:</div>
                   
-                  {page.series.Models.map(model => (
+                  {page.series.models.map(model => (
                     <>
                      <div className="">Model Num: {model.modelNumber}</div>
                      <div className="">Model Grade: {model.grade}</div>

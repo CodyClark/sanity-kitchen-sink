@@ -57,12 +57,25 @@ export default {
       title: 'Adjusted Seats',
       readOnly: true,
     },
+    // {
+    //   type: 'array',
+    //   name: 'Models',
+    //   of: [{ type: 'model' }],
+    //   readOnly: true,
+    // },
     {
+      name: 'models',
       type: 'array',
-      name: 'Models',
-      of: [{ type: 'model' }],
-      readOnly: true,
-    }
+      title: 'Models',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {type: 'model'},
+          ]
+        }
+      ],
+    },
   ],
   orderings: [
     {

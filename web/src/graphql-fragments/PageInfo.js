@@ -17,7 +17,7 @@ export const PostInfo = graphql`
       mpgHighway
       seats
       adjustedSeats
-      Models {
+      models {
           modelId
           grade
           modelNumber
