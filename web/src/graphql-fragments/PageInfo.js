@@ -32,6 +32,12 @@ export const PostInfo = graphql`
           invoice
           dealerCost
       }
+      offers {
+        offerType
+        description
+        startDate
+        endDate
+      }
     }
   }
 `;

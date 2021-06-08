@@ -16,6 +16,17 @@ import route from './documents/route'
 import series from './documents/series'
 import model from './documents/model'
 import characteristic from './documents/characteristic'
+import offer from './documents/offer'
+import states from './documents/states'
+import seriesList from './documents/seriesList'
+import bullets from './documents/bullets'
+import bullet from './documents/bullet'
+import disclaimers from './documents/disclaimers'
+import restrictions from './documents/restrictions'
+import offerCard from './documents/offerCard'
+import seriesOffer from './documents/seriesOffer'
+import seriesOfferDetail from './documents/seriesOfferDetail'
+import seriesInfo from './documents/seriesInfo'
 
 import experiment from './objects/experiment'
 import simpleBlockContent from './objects/simpleBlockContent'
@@ -67,7 +78,18 @@ export default createSchema({
       excerptPortableText,
       series,
       model,
-      characteristic
+      characteristic,
+      offer,
+      states,
+      seriesList,
+      bullets,
+      disclaimers,
+      restrictions,
+      offerCard,
+      seriesOffer,
+      seriesOfferDetail,
+      seriesInfo,
+      bullet
     ])
     .concat(allPlugs),
 })

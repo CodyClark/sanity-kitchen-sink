@@ -146,6 +146,14 @@ const Page = props => {
                     </> 
                     
                   ))}
+
+                  {page.series.offers.map(offer => (
+                    <>
+                     <div className="">Description: {offer.description}</div>
+                     <br />
+                    </> 
+                    
+                  ))}
                 </>
         </div>
         <div className="pt-24">{content}</div>

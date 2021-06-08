@@ -57,22 +57,44 @@ export default {
       title: 'Adjusted Seats',
       readOnly: true,
     },
-    // {
-    //   type: 'array',
-    //   name: 'Models',
-    //   of: [{ type: 'model' }],
-    //   readOnly: true,
-    // },
     {
       name: 'models',
       type: 'array',
       title: 'Models',
+      readOnly: true,
       of: [
         {
           type: 'reference',
           to: [
             {type: 'model'},
           ]
+        }
+      ],
+    },
+    {
+      name: 'offers',
+      type: 'array',
+      title: 'Offers',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {type: 'offer'},
+          ],
+          options: {
+            filter: ({ document }) => {
+              console.log(document)
+              if (!document.name) {
+                return;
+              }
+              return {
+                filter: 'seriesList.series.id == $name',
+                params: {
+                  name: document.name.toLowerCase(),
+                }
+              }
+            }
+          }
         }
       ],
     },
