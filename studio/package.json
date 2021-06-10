@@ -38,7 +38,8 @@
     "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
     "sanity-plugin-google-analytics": "^0.2.6",
     "sanity-plugin-json-to-docs": "^1.0.3",
-    "sanity-plugin-mux-input": "^0.2.1"
+    "sanity-plugin-mux-input": "^0.2.1",
+    "sanity-plugin-tabs": "^2.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

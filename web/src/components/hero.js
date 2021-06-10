@@ -5,7 +5,8 @@ import CTALink from "./CTALink";
 
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
-const maybeImage = (illustration,series) => {
+
+const maybeImage = illustration => {
   let img = null;
   if (illustration && illustration.image && illustration.image.asset && !illustration.disabled) {
     const imageData = getGatsbyImageData(
@@ -15,26 +16,29 @@ const maybeImage = (illustration,series) => {
     );
 
     img = (
-      <>
       <GatsbyImage
         className="w-full md:w-4/5 z-50"
         image={imageData}
         alt={illustration.image.alt}
       />
-      <div>As Shown: {series.startingMSRP}</div>
-    </>
     );
   }
   return img;
 };
 
 function Hero(props) {
-  const img = maybeImage(props.illustration, props.series);
+  console.log(props);
+  const img = maybeImage(props.illustration);
   return (
     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       {/* Left col */}
       <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-        {/* <p className="uppercase tracking-loose w-full">{props.label}</p> */}
+        <p className="uppercase tracking-loose w-full">type: {props.heroOffer.offerType}</p>
+        <p className="uppercase tracking-loose w-full">dates: {props.heroOffer.startDate} - {props.heroOffer.endDate} </p>
+        <p className="uppercase tracking-loose w-full">title: {props.heroOffer.title}</p>
+        <p className="uppercase tracking-loose w-full">desc: {props.heroOffer.description}</p>
+        
+        {/* <div>{JSON.stringify(props.heroOffer)}</div>  */}
         <h1 className="my-4 text-5xl font-bold leading-tight">{props.heading}</h1>
         <div className="leading-normal text-2xl mb-8">
           <PortableText blocks={props.tagline} />
@@ -47,6 +51,7 @@ function Hero(props) {
         )}
       </div>
       {/* Right col */}
+      <img src={`https://toyota.com/${props.heroOffer.offerImage}`} />
       <div className="w-full md:w-3/5 py-6 text-center">{img}</div>
     </div>
   );

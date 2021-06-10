@@ -75,7 +75,7 @@ const Page = props => {
           el = <InfoRows key={c._key} {...c} />;
           break;
         case "hero":
-          el = <Hero key={c._key} series={page.series} {...c}  />;
+          el = <Hero key={c._key} {...c}  />;
           break;
         case "ctaColumns":
           el = <CTAColumns key={c._key} {...c} />;
@@ -146,14 +146,14 @@ const Page = props => {
                     </> 
                     
                   ))}
-
+{/* 
                   {page.series.offers.map(offer => (
                     <>
                      <div className="">Description: {offer.description}</div>
                      <br />
                     </> 
                     
-                  ))}
+                  ))} */}
                 </>
         </div>
         <div className="pt-24">{content}</div>

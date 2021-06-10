@@ -1253,7 +1253,7 @@
     sanity-diff-patch "^1.0.9"
     styled-components "^5.2.1"
 
-"@sanity/form-builder@2.10.5":
+"@sanity/form-builder@2.10.5", "@sanity/form-builder@^2.0.1":
   version "2.10.5"
   resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-2.10.5.tgz#38b60dc13a3b9a9321af09778df0cb24e6987c9d"
   dependencies:
@@ -2637,7 +2637,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.3.1"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
 
@@ -7376,6 +7376,10 @@ property-information@^5.0.0:
   dependencies:
     xtend "^4.0.0"
 
+proptypes@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/proptypes/-/proptypes-1.1.0.tgz#78b3828a5aa6bb1308939e0de3c6044dfd4bd239"
+
 proxy-addr@~2.0.5:
   version "2.0.7"
   resolved "https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.7.tgz#f19fe69ceab311eeb94b42e70e8c2070f9ba1025"
@@ -7586,6 +7590,15 @@ react-debounce-render@^5.0.0:
   dependencies:
     lodash.debounce "^4.0.8"
 
+react-dom@^16.13.1:
+  version "16.14.0"
+  resolved "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.19.1"
+
 react-dom@^17.0.1:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -7754,7 +7767,7 @@ react-tiny-virtual-list@^2.0.5:
   dependencies:
     prop-types "^15.5.7"
 
-react@^16.2.0:
+react@^16.13.1, react@^16.2.0:
   version "16.14.0"
   resolved "https://registry.npmjs.org/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   dependencies:
@@ -8263,6 +8276,17 @@ sanity-plugin-mux-input@^0.2.1:
     prop-types "^15.6.0"
     react "^16.2.0"
     uuid "^3.3.2"
+
+sanity-plugin-tabs@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/sanity-plugin-tabs/-/sanity-plugin-tabs-2.0.1.tgz#24ba817a288a789cdc71238232a037f12b02937a"
+  dependencies:
+    "@sanity/form-builder" "^2.0.1"
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+    proptypes "^1.1.0"
+    react "^16.13.1"
+    react-dom "^16.13.1"
 
 sax@~1.2.4:
   version "1.2.4"

@@ -1,3 +1,5 @@
+import Tabs from "sanity-plugin-tabs"
+
 export default {
   type: 'document',
   name: 'model',
@@ -74,7 +76,8 @@ export default {
       title: 'Characteristics',
       type: 'characteristic',
       collapsible: true,
-      collapsed: true
+      collapsed: true,
+
     },
   ],
 }

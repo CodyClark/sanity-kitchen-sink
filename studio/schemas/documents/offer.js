@@ -145,7 +145,7 @@ export default {
       title: 'Series List',
       name: 'seriesList',
       type: 'seriesList',
-      readOnly: true,
+      
     },
     {
       title: 'Bullets',

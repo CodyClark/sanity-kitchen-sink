@@ -25,7 +25,8 @@
     "mux-input",
     "google-analytics",
     "@sanity/production-preview",
-    "json-to-docs"
+    "json-to-docs",
+    "tabs"
   ],
   "parts": [
     {
